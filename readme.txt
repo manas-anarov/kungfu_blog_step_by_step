@@ -1,4 +1,4 @@
-Django Tutorial #1 - Creating a project
+Django Tutorial #1 - Creating a project. Login
 
 django-admin.py startproject kungfu_blog
 cd kungfu_blog
