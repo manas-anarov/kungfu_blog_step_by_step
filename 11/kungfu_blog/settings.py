@@ -127,3 +127,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'restaccount.DriverUser'
+
+LOGIN_REDIRECT_URL = '/profile/list'
