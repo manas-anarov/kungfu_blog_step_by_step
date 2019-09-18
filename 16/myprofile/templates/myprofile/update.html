@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block head_title %}Update{% endblock %}
+{% block content %}
+
+
+<form action="" method="post">
+{% csrf_token %}
+Title
+<br>
+<input type="text" name="title" value="{{ post.title }}">
+<hr>
+
+Text
+<br>
+<input type="text" name="text" value="{{ post.text }}">
+<hr>
+
+Category
+<br>
+<select name="category">
+    {% for i in all_category %}
+    <option value="{{ i.id_category }}">{{ i.name }}</option>
+    {% endfor %}
+</select>
+<hr>
+
+<input type="submit" value="Update" />
+</form>
+
+
+{% endblock %}
