@@ -1,0 +1,1 @@
+22. Django+Android tutorial. Create Blog. Android register user
